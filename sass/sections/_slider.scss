@@ -1,0 +1,167 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+@use "../../node_modules/swiper/swiper-bundle.min.css";
+
+.sliderArea {
+  padding-top: 5rem;
+
+  .leftSide {
+    p {
+      font-size: 1.25rem;
+      font-weight: $font-weight-medium;
+      font-family: $font-family-code;
+      line-height: 1.25rem;
+      color: $blue;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      position: relative;
+      font-size: 2rem;
+      font-weight: $font-weight-bold;
+      font-family: $font-family-code;
+      line-height: 1.625rem;
+      color: $blue;
+      margin-bottom: 0.75rem;
+
+      &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22%;
+        height: 0.05rem;
+        @include line;
+      }
+    }
+
+    h2 ~ p {
+      font-size: 1.125rem;
+      font-weight: $font-weight-normal;
+      font-family: $font-family-base;
+      line-height: 1.875rem;
+      color: $blue;
+    }
+    a {
+      margin-top: 2rem;
+      font-size: 1.125rem;
+      font-weight: $font-weight-semibold;
+      font-family: $font-family-base;
+      line-height: 1.5rem;
+      color: $orange-dark;
+
+      //   img {
+
+      //   }
+    }
+  }
+
+  .rightSide {
+    .card {
+      img {
+      }
+      .card-body {
+        padding: 1.5rem;
+      }
+
+      .card-title {
+        text-align: start;
+        font-size: 1.25rem;
+        font-weight: $font-weight-bold;
+        font-family: $font-family-code;
+        color: $blue;
+        line-height: 1.875rem;
+      }
+      .card-description {
+        p {
+          font-size: 1.125rem;
+          font-family: $font-family-base;
+          font-weight: $font-weight-semibold;
+          line-height: 1.625rem;
+          color: $text-gray;
+          margin: 0;
+        }
+
+        div {
+          margin-right: 0.625rem;
+          font-size: 1rem;
+          line-height: 1rem;
+          font-weight: $font-weight-semibold;
+
+          i {
+            color: $yellow;
+            &:nth-last-child(2),
+            &:nth-last-child(1) {
+              color: $gray;
+            }
+          }
+        }
+      }
+
+      .cardFooter {
+        padding-top: 1rem;
+        .display {
+          font-family: $font-family-code;
+          font-weight: $font-weight-bold;
+          &--cardPrice {
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            color: $blue;
+          }
+
+          &--cardSales {
+            font-size: 1rem;
+            line-height: 2.25rem;
+            color: $gray;
+          }
+        }
+
+          button {
+            font-size: 0.9375rem;
+            font-weight: $font-weight-bold;
+            font-family: $font-family-base;
+            line-height: 1.5rem;
+            color: $blue;
+            border: 0.0625rem solid $gray;
+
+            &::before {
+              background: #fff !important;
+              color: $blue;
+            }
+            &:hover::before {
+              background: $primary !important;
+            }
+            &:hover {
+              color: $white !important;
+            }
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  // font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  // object-fit: cover;
+}

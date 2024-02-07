@@ -1,0 +1,26 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.marketPlace {
+  background-image: linear-gradient(to right, #FBF8F8, rgb(251 248 248 / 0%)),url(../../public/img/slider/reactBg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 7rem 0 0;
+  // forTBD
+  margin-bottom: 300px;
+
+  .marketBrand {
+    .imgContain {
+      @include media-breakpoint-down(xl) {
+        margin: 1rem 0;
+      }
+
+      img {
+        @include media-breakpoint-down(sm) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  border: 0;
+  background-color: #04122b !important;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    @include btnClr;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.3s linear;
+  }
+
+  &:focus-visible {
+    outline: 2px solid black;
+  }
+
+  &:hover::before {
+    background: none;
+  }
+}

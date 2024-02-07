@@ -1,0 +1,23 @@
+// IMPORT GOOGLE FONT
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+// OVERRIDE BOOTSTRAP COLOR
+$blue: #04122b;
+$gray: #c4cadd;
+$text-gray: #444444;
+$green: #72bf40;
+$orange:  #F38844;
+
+
+
+// MY THEME COLOR
+$primary: $blue;
+$secondary: $gray;
+
+$orange-dark: #FF4551;
+
+// IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// MY FONT FAMILY
+$font-family-base: "IBM Plex Sans", sans-serif;
+$font-family-code: "Manrope", sans-serif;

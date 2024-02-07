@@ -1,0 +1,25 @@
+@mixin heroBG {
+  background: linear-gradient(to right, #ebe6fa, #dce5f9);
+}
+
+@mixin btnClr {
+  background: linear-gradient(to right, #fb275b, rgb(255 166 27 / 82%));
+}
+
+@mixin eliteAuthorBadge {
+  background: linear-gradient(
+    to top,
+    rgb(243 136 68 / 13%),
+    rgba(243, 135, 68, 0.23)
+  );
+}
+
+
+@mixin sliderSectionBG {
+  background: linear-gradient(to right, #FBF8F8, rgb(251 248 248 / 0%));
+}
+
+@mixin line {
+  background: linear-gradient(to right, #7391D4, #7391d400);
+
+}

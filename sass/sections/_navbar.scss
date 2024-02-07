@@ -1,0 +1,161 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.navManue {
+  @include heroBG;
+  font-family: $font-family-base;
+
+  .navbar-brand {
+    img {
+      @include media-breakpoint-down(xl) {
+        width: 3vw;
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 4vw;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 5vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 6.5vw;
+      }
+
+      &:nth-child(2) {
+        padding-top: 0.625rem;
+
+        @include media-breakpoint-down(xl) {
+          width: 15vw;
+          padding-top: 0.25rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+          width: 16vw;
+        }
+
+        @include media-breakpoint-down(md) {
+          width: 22vw;
+        }
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    width: 2.375rem;
+    height: 2.375rem;
+    @include media-breakpoint-down(sm) {
+      width: 6.5vw;
+      height: 6.5vw;
+    }
+
+    i {
+      font-size: 1.5625rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $black;
+    }
+  }
+
+  .navbar-nav {
+    padding: 0.3125rem 1rem !important;
+
+    .nav-item {
+      padding: 0.25rem 1rem;
+
+      @include media-breakpoint-down(xl) {
+        padding: 0.125rem 0.625rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 0.25rem 1rem;
+      }
+
+      .nav-link {
+        color: $text-gray;
+        font-size: 0.9375rem;
+        line-height: 1.375rem;
+        font-weight: $font-weight-normal;
+        padding: 0;
+        margin: 0;
+        transition: all 0.05s ease-in-out;
+
+        p {
+          position: relative;
+          // FIXED ONHOVER TO CHANGING FONT WEIGHT
+          &::before {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            content: attr(name);
+            width: max-content;
+            height: auto;
+            letter-spacing: -0.01375rem;
+            font-weight: $font-weight-semibold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s linear;
+          }
+        }
+
+        span {
+          font-size: 0.5625rem;
+          line-height: 1rem;
+          font-weight: $font-weight-bold;
+          padding: 0.1875rem 0.375rem;
+          margin-left: 0.5rem;
+        }
+
+        &:hover p::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .active {
+        font-weight: $font-weight-semibold;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    content: "\f107";
+    font-weight: 600;
+    font-family: "Font Awesome 5 free";
+    border: 0;
+    font-size: 0.75rem;
+  }
+
+  .action_area {
+    a {
+      @include media-breakpoint-down(xl) {
+        margin-right: 0.5rem;
+      }
+
+      font-size: 0.9375rem;
+      font-weight: $font-weight-semibold;
+      line-height: 1.125rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+// rounded class issue.
+@include media-breakpoint-down(md) {
+  .rounded-sm-0 {
+    border-radius: 0 !important;
+  }
+}
