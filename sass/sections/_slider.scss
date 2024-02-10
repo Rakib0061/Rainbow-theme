@@ -2,122 +2,215 @@
 @use "../components/mixins" as *;
 @use "../../node_modules/swiper/swiper-bundle.min.css";
 
-.sliderArea {
-  padding-top: 5rem;
+.sliderPart {
+  @include sliderSectionBG;
+  overflow: hidden;
 
-  .leftSide {
-    p {
-      font-size: 1.25rem;
-      font-weight: $font-weight-medium;
-      font-family: $font-family-code;
-      line-height: 1.25rem;
-      color: $blue;
-      margin-bottom: 0.75rem;
-    }
+  .sliderArea {
+    padding-top: 5rem;
 
-    h2 {
-      position: relative;
-      font-size: 2rem;
-      font-weight: $font-weight-bold;
-      font-family: $font-family-code;
-      line-height: 1.625rem;
-      color: $blue;
-      margin-bottom: 0.75rem;
-
-      &::before {
-        position: absolute;
-        content: "";
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 22%;
-        height: 0.05rem;
-        @include line;
-      }
-    }
-
-    h2 ~ p {
-      font-size: 1.125rem;
-      font-weight: $font-weight-normal;
-      font-family: $font-family-base;
-      line-height: 1.875rem;
-      color: $blue;
-    }
-    a {
-      margin-top: 2rem;
-      font-size: 1.125rem;
-      font-weight: $font-weight-semibold;
-      font-family: $font-family-base;
-      line-height: 1.5rem;
-      color: $orange-dark;
-
-      //   img {
-
-      //   }
-    }
-  }
-
-  .rightSide {
-    .card {
-      img {
-      }
-      .card-body {
-        padding: 1.5rem;
-      }
-
-      .card-title {
-        text-align: start;
-        font-size: 1.25rem;
-        font-weight: $font-weight-bold;
-        font-family: $font-family-code;
-        color: $blue;
-        line-height: 1.875rem;
-      }
-      .card-description {
-        p {
-          font-size: 1.125rem;
-          font-family: $font-family-base;
-          font-weight: $font-weight-semibold;
-          line-height: 1.625rem;
-          color: $text-gray;
-          margin: 0;
+    .leftSide {
+      & > img {
+        @include media-breakpoint-down(xl) {
+          top: 90%;
+          left: 33%;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 32%;
+          width: 35%;
+        }
+        @include media-breakpoint-down(md) {
+          top: 50%;
+          left: 32%;
+        }
+        @include media-breakpoint-down(sm) {
+          top: 45%;
+          left: 16%;
+          width: 65%;
         }
 
-        div {
-          margin-right: 0.625rem;
-          font-size: 1rem;
-          line-height: 1rem;
-          font-weight: $font-weight-semibold;
+        top: 70%;
+        left: -30%;
+        transform: translate(0%, -80%);
+      }
 
-          i {
-            color: $yellow;
-            &:nth-last-child(2),
-            &:nth-last-child(1) {
-              color: $gray;
+      p {
+        font-size: 1.25rem;
+        font-weight: $font-weight-medium;
+        font-family: $font-family-code;
+        line-height: 1.25rem;
+        color: $blue;
+        margin-bottom: 0.75rem;
+      }
+
+      h2 {
+        position: relative;
+        font-size: 2rem;
+        font-weight: $font-weight-bold;
+        font-family: $font-family-code;
+        line-height: 1.625rem;
+        color: $blue;
+        margin-bottom: 0.75rem;
+
+        &::before {
+          @include media-breakpoint-down(xl) {
+            width: 8%;
+            height: 0.07rem;
+            left: 60%;
+          }
+          @include media-breakpoint-down(md) {
+            left: 70%;
+            width: 22%;
+          }
+          @include media-breakpoint-down(sm) {
+            left: 78%;
+          }
+
+          position: absolute;
+          content: "";
+          left: 40%;
+          top: 50%;
+          transform: translate(-40%, -50%);
+          width: 22%;
+          height: 0.05rem;
+          @include line;
+        }
+      }
+
+      h2 ~ p {
+        @include media-breakpoint-down(xl) {
+          padding: 0 8.125rem;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 1rem;
+        }
+
+        font-size: 1.125rem;
+        font-weight: $font-weight-normal;
+        font-family: $font-family-base;
+        line-height: 1.875rem;
+        color: $blue;
+      }
+      a {
+        @include media-breakpoint-down(sm) {
+          margin-top: 1.2rem;
+          font-size: 1.0625rem;
+        }
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: underline;
+        font-size: 1.125rem;
+        font-weight: $font-weight-semibold;
+        font-family: $font-family-base;
+        line-height: 1.5rem;
+        color: $orange-dark;
+
+        //   img {
+
+        //   }
+      }
+    }
+
+    .rightSide {
+      .card {
+        img {
+        }
+        .card-body {
+          @include media-breakpoint-down(sm) {
+            padding: 1rem;
+          }
+          @include media-breakpoint-down(xl) {
+            padding: 1rem;
+          }
+
+          padding: 1.5rem;
+        }
+
+        .card-title {
+          @include media-breakpoint-down(xl) {
+            font-size: 1.125rem;
+          }
+
+          text-align: start;
+          font-size: 1.25rem;
+          font-weight: $font-weight-bold;
+          font-family: $font-family-code;
+          color: $blue;
+          line-height: 1.875rem;
+        }
+        .card-description {
+          p {
+            @include media-breakpoint-down(sm) {
+              font-size: 1rem;
+            }
+            @include media-breakpoint-down(xl) {
+              font-size: 1rem;
+            }
+
+            font-size: 1.125rem;
+            font-family: $font-family-base;
+            font-weight: $font-weight-semibold;
+            line-height: 1.625rem;
+            color: $text-gray;
+            margin: 0;
+          }
+
+          div {
+            @include media-breakpoint-down(sm) {
+              font-size: 0.8rem;
+            }
+
+            margin-right: 0.625rem;
+            font-size: 1rem;
+            line-height: 1rem;
+            font-weight: $font-weight-semibold;
+
+            i {
+              @include media-breakpoint-down(sm) {
+                font-size: 0.7rem;
+              }
+
+              color: $yellow;
+              &:nth-last-child(2),
+              &:nth-last-child(1) {
+                color: $gray;
+              }
             }
           }
         }
-      }
 
-      .cardFooter {
-        padding-top: 1rem;
-        .display {
-          font-family: $font-family-code;
-          font-weight: $font-weight-bold;
-          &--cardPrice {
-            font-size: 1.25rem;
-            line-height: 2.25rem;
-            color: $blue;
+        .cardFooter {
+          @include media-breakpoint-down(sm) {
+            padding-top: 0.5rem;
           }
 
-          &--cardSales {
-            font-size: 1rem;
-            line-height: 2.25rem;
-            color: $gray;
+          padding-top: 1rem;
+
+          .display {
+            font-family: $font-family-code;
+            font-weight: $font-weight-bold;
+            &--cardPrice {
+              @include media-breakpoint-down(xl) {
+                font-size: 1.125rem;
+              }
+
+              font-size: 1.25rem;
+              line-height: 2.25rem;
+              color: $blue;
+            }
+
+            &--cardSales {
+              font-size: 1rem;
+              line-height: 1.25rem;
+              color: $gray;
+            }
           }
-        }
 
           button {
+            @include btnClr;
             font-size: 0.9375rem;
             font-weight: $font-weight-bold;
             font-family: $font-family-base;
@@ -126,34 +219,195 @@
             border: 0.0625rem solid $gray;
 
             &::before {
-              background: #fff !important;
-              color: $blue;
+              background: #fff;
             }
-            &:hover::before {
-              background: $primary !important;
-            }
+
             &:hover {
-              color: $white !important;
+              color: $white;
+              border-color: transparent;
             }
           }
+        }
+      }
+    }
+  }
+
+  .counterHolder {
+    @include BgWhiteDim;
+
+    .empoweredCount {
+      @include media-breakpoint-down(sm){
+        padding: 0.125rem 0 0;
+      };
+      background: url(../../public/img/slider/sliderDownAreaCircle.png),
+        url(../../public/img/heroSection/BGbar.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 6.25rem 0 0;
+      margin-top: 2.375rem;
+
+      .customarNumber {
+        width: fit-content;
+        margin: auto;
+        background: #fff;
+        outline: 2px solid #fff;
+        padding: 10px;
+
+        background: #fff;
+        .spanWrapper {
+          background: url(../../public/img/slider/sliderDownAreaCircle.png),
+            url(../../public/img/heroSection/BGbar.png);
+
+          span {
+            @include media-breakpoint-down(xl){
+                font-size: 1.5rem;
+            };
+            
+            margin: 0 0.03125rem;
+            background: $green;
+            font-size: 3.25rem;
+            font-family: $font-family-code;
+            font-weight: $font-weight-bold;
+          }
+        }
+      }
+
+      .display-4 {
+        padding: 2rem 0;
+        span {
+          @include media-breakpoint-down(sm){
+            font-size: 1.25rem;
+          }
+        }
       }
     }
   }
 }
 
-
-
-
-
 .swiper {
-  width: 100%;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+
+  width: 115%;
   height: 100%;
+  padding-bottom: 5.25rem;
+  position: relative;
+
+  &-wrapper {
+    cursor: grab;
+  }
+
+  .sliderLoopingBtn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+
+    .sliderLoopingBtnGroup {
+      .swiper-button-next:after,
+      .swiper-rtl .swiper-button-prev:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        color: $orange;
+        content: "\f061";
+        font-size: 1.5625rem;
+      }
+
+      .swiper-button-prev:after,
+      .swiper-rtl .swiper-button-next:after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        content: "\f060";
+        color: $orange;
+        font-size: 1.5625rem;
+      }
+      .swiper-button-next,
+      .swiper-rtl .swiper-button-prev {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+
+        @include media-breakpoint-down(md) {
+          right: 0;
+        }
+
+        right: 20%;
+        border: 1px solid $orange;
+        border-radius: 100%;
+        padding: 1.25rem;
+      }
+
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+
+        @include media-breakpoint-down(md) {
+          left: 0;
+        }
+
+        left: inherit;
+        right: 30%;
+        border: 1px solid $orange;
+        border-radius: 100%;
+        padding: 1.25em;
+      }
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+      }
+
+      @include media-breakpoint-down(md) {
+        justify-content: center;
+      }
+
+      display: flex;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      background: $gray;
+    }
+
+    .swiper-pagination-bullet-active {
+      position: relative;
+      margin: 0 0.625rem;
+      background: $orange !important;
+
+      &::after {
+        position: absolute;
+        content: "";
+        border: 1px solid $orange;
+        border-radius: 100%;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
 }
 
 .swiper-slide {
   text-align: center;
-  // font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,5 +417,5 @@
   display: block;
   width: 100%;
   height: 100%;
-  // object-fit: cover;
+  object-fit: cover;
 }

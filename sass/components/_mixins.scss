@@ -16,10 +16,14 @@
 
 
 @mixin sliderSectionBG {
-  background: linear-gradient(to right, #FBF8F8, rgb(251 248 248 / 0%));
+  background: linear-gradient(to left, #FBF8F8, rgb(251 248 248 / 0%));
 }
 
 @mixin line {
   background: linear-gradient(to right, #7391D4, #7391d400);
 
+}
+
+@mixin BgWhiteDim {
+  background: radial-gradient(farthest-corner, #fff 20%, transparent 70%);
 }

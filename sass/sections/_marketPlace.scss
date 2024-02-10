@@ -2,13 +2,8 @@
 @use "../components/mixins" as *;
 
 .marketPlace {
-  background-image: linear-gradient(to right, #FBF8F8, rgb(251 248 248 / 0%)),url(../../public/img/slider/reactBg.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @include sliderSectionBG;
   padding: 7rem 0 0;
-  // forTBD
-  margin-bottom: 300px;
 
   .marketBrand {
     .imgContain {

@@ -150,6 +150,13 @@
       line-height: 1.125rem;
       margin-right: 2rem;
     }
+
+    button {
+      background: $primary;
+      &::before{
+        @include btnClr;
+      }
+    }
   }
 }
 

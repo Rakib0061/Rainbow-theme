@@ -12,11 +12,11 @@
     background-size: 136%;
 
     .wrapper {
-      @include media-breakpoint-down(lg){
+      @include media-breakpoint-down(lg) {
         padding-bottom: 20%;
       }
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         padding-bottom: 35%;
       }
 
@@ -35,7 +35,7 @@
           padding: 1.1875rem 5rem 1.5rem;
         }
 
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
           padding: 1.1875rem 2rem 1.5rem;
         }
 
@@ -74,18 +74,16 @@
               margin: 0.625rem 0;
             }
 
-            @include media-breakpoint-down(sm){
-            margin: 0 0.3125rem;
+            @include media-breakpoint-down(sm) {
+              margin: 0 0.3125rem;
             }
 
             margin: 0 0.75rem;
 
             span {
-
-              @include media-breakpoint-down(sm){
+              @include media-breakpoint-down(sm) {
                 font-size: 0.75rem;
                 padding: 0.625rem;
-  
               }
 
               font-size: 1.125rem;
@@ -251,9 +249,8 @@
       }
 
       .btn-group {
-        @include media-breakpoint-down(lg){
-        padding-top: 2.625rem;
-          
+        @include media-breakpoint-down(lg) {
+          padding-top: 2.625rem;
         }
         padding-top: 4.625rem;
 
@@ -262,6 +259,7 @@
         }
 
         button {
+          background: $primary;
           @include media-breakpoint-down(md) {
             padding: 0.635rem 0.9375rem;
             margin: 0 0.9375rem;
@@ -278,12 +276,21 @@
           color: $white;
           margin: 0 1.5rem;
 
+          &::before {
+            @include btnClr;
+          }
+
           &:nth-child(2) {
             border: 2px solid $gray;
             color: $blue;
 
             &::before {
               @include heroBG;
+            }
+
+            &:hover {
+              color: $white;
+              border-color: transparent;
             }
           }
 
