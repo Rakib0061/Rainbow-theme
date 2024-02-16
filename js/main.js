@@ -28,7 +28,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    // 320px এর উপরে কাজ করবে... 
+    // 320px এর উপরে কাজ করবে...
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -84,9 +84,12 @@ navbar_toggler.addEventListener("click", () => {
 });
 // END MENU BAR TOGGLER
 
-// SHADOW TOGGLE ONSCROLL
-
-// SHADOW TOGGLE ONSCROLL
+// FIXED NAVBAR ON SCROLL BEGIN
+window.addEventListener("scroll", () => {
+  let Y = window.scrollY;
+  navManue.classList.toggle("shadow", Y > 0, "fixed-top", Y > 0);
+});
+// FIXED NAVBAR ON SCROLL END
 
 // COMMON FUNCTION START FOR CLICK TWICE PALCE
 function handlBarToggler() {
@@ -111,9 +114,36 @@ const cardBtnEye = document.querySelectorAll(".cardBtnEye");
 const fa_eye_slash = document.querySelector(".fa-eye-slash");
 const fa_eye = document.querySelector(".fa-eye");
 
-cardBtnEye.forEach(vlu => vlu.addEventListener("click", () => {
-  fa_eye_slash.classList.toggle("d-none");
-  fa_eye.classList.toggle("d-none");
-}));
+cardBtnEye.forEach((vlu) =>
+  vlu.addEventListener("click", () => {
+    fa_eye_slash.classList.toggle("d-none");
+    fa_eye.classList.toggle("d-none");
+  })
+);
 
 // END CARD BTN COLLAPSE
+
+// BOOTSTRAP FORM VALIDATION BEGIN
+(() => {
+  "use strict";
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          console.log("ko");
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
+// BOOTSTRAP FORM VALIDATION END

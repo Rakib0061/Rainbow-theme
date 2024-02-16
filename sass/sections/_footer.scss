@@ -1,0 +1,196 @@
+@use "../custom" as *;
+@use "../../sass/components/mixins" as *;
+
+footer {
+  background-color: $primary;
+  color: $white;
+
+  .containeFooter {
+    @include BgWhiteMoreDim;
+    .footerAreaTop {
+      padding-top: 6rem;
+      .topFooterLeft {
+        .display-6 {
+        }
+      }
+      .topFooterRight {
+        .input-group {
+          input {
+            // background: $grayDark;
+            padding: 0.7rem 4.375rem 0.7rem 2.8125rem;
+            font-size: 1.125rem;
+            font-family: $font-family-base;
+            font-weight: $font-weight-normal;
+            background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%239FACB6%22%20class%3D%22bi%20bi-envelope%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20d%3D%22M0%204a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2zm2-1a1%201%200%200%200-1%201v.217l7%204.2%207-4.2V4a1%201%200%200%200-1-1zm13%202.383-4.708%202.825L15%2011.105zm-.034%206.876-5.64-3.471L8%209.583l-1.326-.795-5.64%203.47A1%201%200%200%200%202%2013h12a1%201%200%200%200%20.966-.741M1%2011.105l4.708-2.897L1%205.383z%22%2F%3E%0A%3C%2Fsvg%3E");
+            background-position: 3% 54%;
+            background-size: 1.25rem;
+            background-repeat: no-repeat;
+            color: $grayDark;
+            border: 0.125rem solid $grayDark;
+            background-color: $grayLight;
+
+            &::placeholder {
+              color: $grayDark;
+              font-size: 1.125rem;
+              font-family: $font-family-base;
+            }
+          }
+
+          .invalid-feedback {
+            bottom: -50%;
+            a {
+              text-decoration: underline;
+            }
+          }
+
+          button {
+            border: 0;
+            background: none;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            top: 50%;
+            transform: translate(-15%, -50%);
+
+            i {
+              font-size: 2.6rem;
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+    hr {
+      color: $grayLight;
+      opacity: 0.2;
+    }
+    .footerAreaMiddle {
+      padding-top: 3.6875rem;
+      padding-bottom: 2rem;
+
+      .footerTitleSection {
+        a {
+          img {
+            padding-bottom: 1rem;
+          }
+        }
+        p {
+          font-size: 1rem;
+          font-family: $font-family-base;
+          font-weight: $font-weight-normal;
+          line-height: 1.5rem;
+        }
+      }
+      .footerLinkSection {
+        .resources {
+          h6 {
+          }
+          ul {
+            li {
+              a {
+                color: $grayDark;
+                font-size: 0.9375rem;
+                font-family: $font-family-code;
+                font-weight: $font-weight-normal;
+                line-height: 1.5rem;
+
+                &:hover {
+                  text-decoration: underline;
+                  background: transparent;
+                }
+              }
+            }
+          }
+        }
+        .company {
+          ul {
+            li {
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerAreaBootom {
+      color: $grayDark;
+      bottom: -10%;
+
+      .socialMediaIcon {
+        a {
+          i {
+            margin: 0 0.3rem;
+            padding: 0.625rem;
+            border-radius: 100%;
+            border: 2px solid $grayDark;
+            font-size: 0.875rem;
+            color: $grayDark;
+            background: transparent;
+            transition: all 0.3s linear;
+          }
+
+          &:hover .fa-instagram {
+            color: #fff;
+            background: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+          }
+          &:hover .fa-facebook {
+            color: $white;
+            background-color: #27a3e2;
+          }
+          &:hover .fa-linkedin {
+            color: #fff;
+            background-color: #0073b1;
+          }
+          &:hover .fa-pinterest {
+            color: #fff;
+            background-color: #e60023;
+          }
+          &:hover .fa-whatsapp {
+            color: #fff;
+            background-color: #25d366;
+          }
+
+
+          &:visited {
+            color: #fff;
+          }
+        }
+      }
+      .copywright {
+        small {
+          font-size: 0.875rem;
+          font-family: $font-family-base;
+          line-height: 1.5rem;
+        }
+      }
+      button {
+        background-color: transparent;
+        border-color: transparent;
+        color: $grayDark;
+        transition: border 0.2s ease-in-out;
+        padding: 0.1875rem 0.625rem;
+
+        &:hover{
+          border: 2px solid $grayDark;
+        }
+      }
+    }
+  }
+  svg {
+  }
+}
+
+// override from validation
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-tooltip,
+.is-invalid ~ .invalid-feedback,
+.is-invalid ~ .invalid-tooltip {
+  display: flex;
+}
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+.was-validated .form-control:valid {
+  background-image: none;
+}

@@ -11,7 +11,7 @@
     <meta name="author" content="Rakibul Islam" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rainbow-Themes</title>
-    <link rel="canonical" href="https://###.com/" />
+    <link rel="canonical" href="https://rainbow.com/" />
     <!-- CSS LINK START -->
     <link rel="stylesheet" href="./css/stylemin.css" />
     <!-- CSS LINK END -->
@@ -41,7 +41,7 @@
     <header>
       <!--  START NAVBAR  -->
       <nav
-        class="navbar navbar-expand-md navManue py-2 py-xl-4 py-lg-4 py-md-3 shadow"
+        class="navbar navbar-expand-md navManue py-2 py-xl-4 py-lg-4 py-md-3"
       >
         <div
           class="container justify-content-xl-between justify-content-lg-between justify-content-md-center justify-content-sm-between flex-xl-row flex-lg-row flex-md-column flex-sm-row"
@@ -54,12 +54,20 @@
             href="#"
           >
             <!-- brand logo start -->
-            <img class="img-fluid" src="./public/img/logo.png" alt="logo" />
-            <img
-              class="img-fluid"
-              src="./public/img/rainbow_Themes.png"
-              alt="brand name rainbow themes"
-            />
+            <picture>
+              <source
+                media="(max-width:575px)"
+                srcset="./public/img/logo.png"
+              />
+              <img
+                class="img-fluid"
+                width="234.45"
+                height="38"
+                src="./public/img/bigLogo.png"
+                alt="brand name rainbow themes"
+              />
+            </picture>
+            <!-- <img class="img-fluid" src="./public/img/logo.png" alt="logo" /> -->
             <!-- brand logo start -->
           </a>
           <button
@@ -124,7 +132,11 @@
                   class="nav-link d-flex justify-content-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-center align-content-center"
                   href="#"
                   ><p class="m-0" name="Premium Services">Premium Services</p>
-                  <span class="bg-success rounded-pill text-light">HOT</span></a
+                  <span
+                    class="bg-success rounded-pill text-light"
+                    aria-hidden="true"
+                    >HOT</span
+                  ></a
                 >
               </li>
               <li class="nav-item">
@@ -140,7 +152,7 @@
             >
               <a class="nav-link" href="#">Log IN</a>
               <button type="button" class="btn text-light rounded-2">
-                <span>🤝</span> Hire Us
+                <span aria-hidden="true">🤝</span> Hire Us
               </button>
             </div>
             <!-- action area start -->
@@ -279,13 +291,15 @@
                         class="nav-link"
                         href="https://www.envato.com/"
                         target="_blank"
-                        >
+                      >
                         <img
-                        class="img-fluid ps-0"
-                        src="./public/img/marketPlace/envatomarket.png"
-                        alt="envato market place logo"
-                        width="189.9"
-                        height="54"
+                          class="img-fluid ps-0"
+                          src="./public/img/marketPlace/envatomarket.png"
+                          alt="envato market place logo"
+                          loading="lazy"
+                          decoding="async"
+                          width="189.9"
+                          height="54"
                         />
                       </a>
                     </div>
@@ -301,6 +315,8 @@
                           class="img-fluid"
                           src="./public/img/marketPlace/12levelAuthor.png"
                           alt="envato market 12th lavel author logo"
+                          loading="lazy"
+                          decoding="async"
                           width="182.7"
                           height="54"
                         />
@@ -324,6 +340,8 @@
                         <img
                           class="img-fluid"
                           src="./public/img/marketPlace/themeforest.png"
+                          loading="lazy"
+                          decoding="async"
                           alt="themeforest market Place logo"
                           width="144"
                           height="48"
@@ -341,7 +359,9 @@
                         <img
                           class="img-fluid"
                           src="./public/img/marketPlace/envatoTuts.png"
-                          alt="envato tutos market palce logo"
+                          loading="lazy"
+                          decoding="async"
+                          alt="envato tutos market place logo"
                           width="196.8"
                           height="24"
                         />
@@ -365,7 +385,9 @@
                         <img
                           class="img-fluid pe-0"
                           src="./public/img/marketPlace/codecanon.png"
-                          alt="codecanyo market palce logo"
+                          loading="lazy"
+                          decoding="async"
+                          alt="codecanyo market place logo"
                           width="187.08"
                           height="32"
                         />
@@ -387,7 +409,9 @@
         <div class="container">
           <!-- carusol slider begin -->
           <div class="sliderArea">
-            <div class="row align-items-center flex-column flex-xl-row flex-lg-column">
+            <div
+              class="row align-items-center flex-column flex-xl-row flex-lg-column"
+            >
               <div class="col-12 col-xl-4 col-lg-12">
                 <div
                   class="leftSide text-start position-relative z-1 text-center text-xl-start pb-4"
@@ -397,6 +421,10 @@
                     src="./public/img/slider/reactBg.png"
                     alt="react logo bg image"
                     aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    width="307"
+                    height="272"
                   />
                   <p>Templats</p>
                   <h2>React</h2>
@@ -405,7 +433,7 @@
                     malesuada porttitor aliquam lobortis ultricies phasellus
                     porttitor.
                   </p>
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="https://www.envato.com/"
                     >All React Themes
                     <img
                       class="img-fluid"
@@ -456,7 +484,7 @@
                             >
                               <div class="col-sm col-xl">
                                 <h3
-                                  class="display d-flex justify-content-between  align-items-center flex-row flex-sm-column"
+                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column"
                                 >
                                   <span class="display--cardPrice">$29.00</span>
                                   <span class="display--cardSales"
@@ -530,7 +558,7 @@
                               </div>
                               <div class="col-sm-7 col-xl-8">
                                 <div
-                                  class="cardFooterBtnPar d-flex justify-content-between "
+                                  class="cardFooterBtnPar d-flex justify-content-between"
                                 >
                                   <button class="btn cardBtnEye">
                                     <i class="fa-solid fa-eye d-none"></i>
@@ -584,7 +612,7 @@
                             >
                               <div class="col-sm col-xl">
                                 <h3
-                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column "
+                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column"
                                 >
                                   <span class="display--cardPrice">$29.00</span>
                                   <span class="display--cardSales"
@@ -650,7 +678,7 @@
                             >
                               <div class="col-sm col-xl">
                                 <h3
-                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column "
+                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column"
                                 >
                                   <span class="display--cardPrice">$29.00</span>
                                   <span class="display--cardSales"
@@ -660,7 +688,7 @@
                               </div>
                               <div class="col-sm-7 col-xl-8">
                                 <div
-                                  class="cardFooterBtnPar d-flex justify-content-between "
+                                  class="cardFooterBtnPar d-flex justify-content-between"
                                 >
                                   <button class="btn cardBtnEye">
                                     <i class="fa-solid fa-eye d-none"></i>
@@ -714,7 +742,7 @@
                             >
                               <div class="col-sm col-xl">
                                 <h3
-                                  class="display d-flex justify-content-between  align-items-center flex-row flex-sm-column"
+                                  class="display d-flex justify-content-between align-items-center flex-row flex-sm-column"
                                 >
                                   <span class="display--cardPrice">$29.00</span>
                                   <span class="display--cardSales"
@@ -792,7 +820,7 @@
                   </div>
                 </div>
               </div>
-              <h4 class="display-4 text-center">
+              <h4 class="display-4 text-center m-0">
                 <span class="display-4--title">Website Empowered</span>
                 <span class="display-4--description">Still Counting</span>
               </h4>
@@ -802,11 +830,771 @@
         </div>
       </section>
       <!-- SLIDER AREA END -->
+
+      <!-- SHOWCASE AREA BEGIN -->
+      <section class="showcase">
+        <div class="container">
+          <div class="imagesShowcases position-relative">
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/firstRowOne_424x253-2.webp"
+                width="424"
+                height="253"
+                alt="Boost "
+                class="img-fluid object-fit-cover border-5"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/secoundRowOne_424x318-2.webp"
+                width="424"
+                height="318"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/thiredRowOne_424x282.webp"
+                width="424"
+                height="282"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/firstRowSecound_424x282-2.webp"
+                width="424"
+                height="282"
+                alt=""
+                class="img-fluid object-fit-cover"
+                fetchPriority="low"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/secoundRowSecound_424x333-2.webp"
+                width="424"
+                height="333"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/thirdRowSecound_424x318.webp"
+                width="424"
+                height="318"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/firstRowThird_424x642-2.webp"
+                width="424"
+                height="542"
+                alt=""
+                class="img-fluid object-fit-cover"
+                fetchPriority="low"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/secoundRowThired_424x388-2.webp"
+                width="424"
+                height="388"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/thiredRowThired_424x908.webp"
+                width="424"
+                height="908"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/firstRowFourth_424x307.webp"
+                width="424"
+                height="307"
+                alt=""
+                class="img-fluid object-fit-cover"
+                fetchPriority="low"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+            <figure class="m-0 position-relative rounded-4">
+              <img
+                src="./public/img/showcase/secoundRowFourth_424x460-2.webp"
+                width="424"
+                height="460"
+                alt=""
+                class="img-fluid object-fit-cover"
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+              />
+              <figcaption
+                class="position-absolute top-50 start-50 translate-middle text-black opacity-0"
+              >
+                <a href="#">Check it out?</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- SHOWCASE AREA END -->
+
+      <!-- CONTACT US BEGIN -->
+      <section class="contactUs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="contactUSLeft text-center text-xl-start">
+                <span>⚡</span>
+                <h5 class="display-5">12+ Professionals are waiting for you</h5>
+                <p>
+                  Get support on a large platform, flesh out your first MVP, go
+                  from concept investment, or take your startup to the next
+                  level. Our process wraps around your unique business needs.
+                </p>
+                <button type="button" class="btn">Contact Us Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="contactUs_right d-grid">
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+                <figure class="m-0"></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT US END -->
     </main>
     <!-- MAIN SECTION END -->
 
     <!-- FOOTER SECTION START -->
-    <footer class="d-flex"></footer>
+    <footer>
+      <div class="container">
+        <div class="containeFooter position-relative">
+          <!-- TOP FOOTER BEGIN -->
+          <div class="footerAreaTop">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-xl-6">
+                <div class="topFooterLeft">
+                  <h6 class="display-6">
+                    Want to Get Discount & Product Updates From Us?
+                  </h6>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <form class="row needs-validation topFooterRight" novalidate>
+                  <div class="col-xl-12">
+                    <div class="input-group has-validation">
+                      <input
+                        type="email"
+                        class="form-control rounded-pill"
+                        placeholder="Enter Your email"
+                        pattern="[a-z0-9\._%\+\-]+@[a-z0-9\.\-]+\.[a-z]{3,4}$"
+                        id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend"
+                        required
+                      />
+                      <small
+                        class="invalid-feedback justify-content-between align-items-center position-absolute m-0"
+                      >
+                        please make a valid email
+                        <a class="nav-link" href="#">learn more?</a>
+                      </small>
+                      <button
+                        type="submit"
+                        aria-label="submit your email"
+                        class="position-absolute d-flex justify-content-center align-content-center"
+                      >
+                        <i class="fa-brands fa-telegram"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- TOP FOOTER END -->
+          <hr />
+          <!-- MIDDLE FOOTER BEGIN -->
+          <div class="footerAreaMiddle">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="footerTitleSection">
+                  <a href="#">
+                    <picture>
+                      <source
+                        media="(max-width: 575)"
+                        srcset="./public/img/logo.png"
+                      />
+                      <img
+                        src="./public/img/footer/primary-logo.webp"
+                        alt="Rainbow Theme logo"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Rainbow Theme"
+                        data-bs-placement="bottom"
+                        loading="lazy"
+                        class="img-fluid"
+                        decoding="async"
+                        width="234"
+                        height="47.22"
+                      />
+                    </picture>
+                  </a>
+                  <p>
+                    We're a dedicated team making big products. All the tools
+                    you need to improve your online business.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl">
+                <div class="footerLinkSection">
+                  <div class="row">
+                    <div class="col-xl-3">
+                      <!-- resources link -->
+                      <div class="resources">
+                        <h6>Resources</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <a class="list-group-item-action active" href="#"
+                              >Template</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Update</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Customers</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Become a Partner</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Customer Reviews</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Hype Feed</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <!-- quick links -->
+                      <div class="resources">
+                        <h6>Quick Links</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Account</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Support Center</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Refund Policy</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#">Terms</a>
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Write For Us</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <!-- company links -->
+                      <div class="resources">
+                        <h6>Company</h6>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <a class="list-group-item-action active" href="#"
+                              >About Us</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Testimonials</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Affiliates</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Contact Us</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Life At Rainbow</a
+                            >
+                          </li>
+                          <li class="list-group-item">
+                            <a class="list-group-item-action" href="#"
+                              >Career</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                      <!-- company links -->
+                      <div class="resources company">
+                        <h6>Products</h6>
+                        <ul class="list-group list-group-flush">
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/histudyWordpress24x24.webp"
+                              alt="histudyWordpressLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action active" href="#"
+                              >Histudy Wordpress</a
+                            >
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/doobNextJs24x24.webp"
+                              alt="doobNextJsLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action" href="#"
+                              >Doob NextJs</a
+                            >
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/nuronGatsBy24x24.webp"
+                              alt="nuronGatsByLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action" href="#"
+                              >Nuron Gatsby</a
+                            >
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/tryduReact24x24.webp"
+                              alt="tryduReactLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action" href="#"
+                              >Trydu React</a
+                            >
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/chatenAiHtml24x24.webp"
+                              alt="chatenAiHtmlLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action" href="#"
+                              >Chaten Ai Html</a
+                            >
+                          </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center px-0"
+                          >
+                            <img
+                              src="./public/img/footer/inbioGatsBy24x24.webp"
+                              alt="inbioGatsByLogo"
+                              loading="lazy"
+                              decoding="async"
+                              aria-disabled="true"
+                              class="img-fluid pe-2"
+                              width="24"
+                              height="24"
+                            />
+                            <a class="list-group-item-action" href="#"
+                              >Inbio Gatsby</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MIDDLE FOOTER END -->
+          <!-- BOTTOM FOOTER BEGIN -->
+          <div class="footerAreaBootom position-absolute w-100">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-xl-4">
+                <div class="socialMediaIcon d-flex">
+                  <a target="_blank" href="#"
+                    ><i class="fa-brands fa-linkedin m-0"></i
+                  ></a>
+                  <a target="_blank" href="#"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a target="_blank" href="#"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                  <a target="_blank" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a target="_blank" href="#"
+                    ><i class="fa-brands fa-pinterest m-0"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-xl-4 text-center">
+                <div class="copywright">
+                  <small
+                    >&copy; 2023 - 2024 All Rights Reserved By
+                    Rainbowthemes</small
+                  >
+                </div>
+              </div>
+              <div class="col-xl-4 text-end">
+                <button type="button" class="border-2 rounded-2">
+                  Button On top
+                  <i class="fa-solid fa-angle-up"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- BOTTOM FOOTER END -->
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        id="Layer_1"
+        x="0px"
+        y="0px"
+        width="100%"
+        viewBox="0 0 1920 132"
+        enable-background="new 0 0 1920 132"
+        xml:space="preserve"
+      >
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1057.259766,132.652100   C1051.977905,133.000000 1046.955811,133.000000 1041.466797,133.000000   C1039.081909,130.721115 1039.546387,127.960548 1039.543335,125.339355   C1039.510620,97.862244 1039.221558,70.380531 1039.632812,42.909554   C1039.895996,25.335873 1031.598999,13.634607 1016.817200,5.563727   C1015.133240,4.644276 1012.910645,4.262307 1012.790894,1.396592   C1100.687622,1.000000 1188.375122,1.000000 1276.531372,1.000000   C1278.008057,4.489510 1274.843750,4.630284 1273.070923,5.567548   C1263.091675,10.843309 1255.740112,18.377737 1252.070190,29.214973   C1250.772705,33.046482 1250.453491,37.001896 1250.458130,41.031147   C1250.490723,69.002190 1250.486694,96.973312 1250.458740,124.944382   C1250.456299,127.414215 1250.832520,129.961899 1249.267822,132.640884   C1243.977905,133.000000 1238.955811,133.000000 1233.466797,133.000000   C1231.183472,130.882019 1231.579346,128.299011 1231.575073,125.839470   C1231.541748,106.871078 1231.238647,87.895752 1231.643799,68.936012   C1232.081421,48.461285 1215.293701,32.740356 1197.183472,30.640663   C1177.820190,28.395708 1159.468628,41.699280 1155.115723,60.627808   C1154.474854,63.415119 1154.441406,66.233643 1154.441650,69.064156   C1154.442505,87.866211 1154.455811,106.668282 1154.426270,125.470299   C1154.422729,127.774445 1154.758789,130.151962 1153.259766,132.652100   C1147.977905,133.000000 1142.955811,133.000000 1137.466797,133.000000   C1135.183472,130.882019 1135.579346,128.299011 1135.575073,125.839470   C1135.541748,106.871078 1135.238647,87.895752 1135.643799,68.936012   C1136.081543,48.461266 1119.293579,32.740345 1101.183472,30.640657   C1081.820190,28.395695 1063.468506,41.699242 1059.115845,60.627811   C1058.474731,63.415096 1058.441406,66.233643 1058.441650,69.064156   C1058.442505,87.866211 1058.455811,106.668282 1058.426270,125.470299   C1058.422729,127.774445 1058.758789,130.151962 1057.259766,132.652100  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M673.267822,132.640884   C667.977905,133.000000 662.955811,133.000000 657.466858,133.000000   C655.183472,130.882019 655.579407,128.298965 655.575195,125.839447   C655.542419,106.871063 655.239197,87.895760 655.643799,68.936020   C656.080750,48.457733 639.290894,32.740021 621.183411,30.640667   C601.820068,28.395720 583.468201,41.699383 579.115845,60.627728   C578.474915,63.415035 578.441711,66.233589 578.441711,69.064087   C578.441772,87.866135 578.455383,106.668198 578.426270,125.470207   C578.422729,127.774345 578.758850,130.151917 577.259766,132.652069   C571.977905,133.000000 566.955811,133.000000 561.466858,133.000000   C559.183411,130.881683 559.579468,128.298340 559.575195,125.838486   C559.542175,106.867668 559.112000,87.882942 559.698242,68.930252   C560.170898,53.650421 549.435913,37.680576 532.017700,32.101059   C516.359253,27.085270 499.017822,33.237423 489.353485,47.102684   C484.748596,53.709221 482.313171,60.883411 482.387878,69.055992   C482.559692,87.858871 482.455719,106.664436 482.426331,125.468864   C482.422729,127.773392 482.759003,130.151321 481.259827,132.651978   C475.977905,133.000000 470.955811,133.000000 465.466858,133.000000   C463.082367,130.721497 463.547119,127.961487 463.544006,125.340851   C463.511414,97.869400 463.270691,70.394691 463.616364,42.927563   C463.836548,25.433395 455.665222,13.601817 440.816376,5.561939   C439.129852,4.648791 436.910156,4.261732 436.790833,1.396460   C524.687561,1.000000 612.375122,1.000000 700.531372,1.000000   C702.007568,4.489159 698.843811,4.630159 697.070862,5.567560   C687.091858,10.843436 679.740051,18.377880 676.070190,29.215042   C674.772705,33.046432 674.452820,37.001869 674.457520,41.031181   C674.490295,69.002213 674.486084,96.973320 674.458252,124.944374   C674.455811,127.414169 674.832397,129.961868 673.267822,132.640884  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M385.267853,132.640869   C379.977905,133.000000 374.955811,133.000000 369.466858,133.000000   C367.183563,130.881973 367.579590,128.298935 367.575317,125.839417   C367.542328,106.871040 367.239349,87.895752 367.643921,68.936012   C368.080872,48.458420 351.291687,32.740135 333.183411,30.640680   C313.819946,28.395699 295.468170,41.699440 291.115906,60.627747   C290.475006,63.415039 290.441498,66.233574 290.441559,69.064079   C290.441986,87.866119 290.455383,106.668182 290.426208,125.470184   C290.422638,127.774323 290.758911,130.151901 289.259735,132.652069   C283.977905,133.000000 278.955811,133.000000 273.466858,133.000000   C271.183533,130.881638 271.579437,128.298294 271.575165,125.838440   C271.542297,106.867615 271.112061,87.882889 271.698212,68.930176   C272.170868,53.646832 261.432404,37.679344 244.017593,32.101013   C228.358994,27.085222 211.017822,33.237427 201.353409,47.102745   C196.748505,53.709312 194.313171,60.883556 194.387848,69.056099   C194.559647,87.858978 194.455566,106.664551 194.426376,125.468979   C194.422791,127.773468 194.759094,130.151413 193.259796,132.652008   C187.977905,133.000000 182.955811,133.000000 177.466858,133.000000   C175.082016,130.721039 175.546707,127.960449 175.543610,125.339279   C175.511246,97.862190 175.222076,70.380516 175.633209,42.909557   C175.896225,25.336096 167.598938,13.634665 152.817261,5.563704   C151.133286,4.644245 148.910721,4.262276 148.790894,1.396601   C236.687561,1.000000 324.375122,1.000000 412.531342,1.000000   C414.007751,4.489285 410.843842,4.630176 409.070892,5.567537   C399.091827,10.843369 391.740051,18.377817 388.070221,29.214975   C386.772766,33.046398 386.452942,37.001808 386.457703,41.031120   C386.490814,69.002144 386.486633,96.973244 386.458374,124.944290   C386.455902,127.414108 386.832214,129.961792 385.267853,132.640869  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M865.259827,132.651978   C859.977905,133.000000 854.955811,133.000000 849.466858,133.000000   C847.183472,130.882019 847.579407,128.298965 847.575195,125.839447   C847.542419,106.871063 847.239258,87.895760 847.643860,68.936020   C848.080811,48.457745 831.290894,32.740021 813.183411,30.640675   C793.820068,28.395727 775.468140,41.699387 771.115845,60.627724   C770.474915,63.415031 770.441711,66.233589 770.441711,69.064087   C770.441772,87.866135 770.455383,106.668198 770.426270,125.470207   C770.422729,127.774345 770.758850,130.151917 769.259766,132.652069   C763.977905,133.000000 758.955811,133.000000 753.466858,133.000000   C751.082031,130.720993 751.546936,127.960449 751.543823,125.339256   C751.511719,97.862167 751.222595,70.380501 751.633484,42.909534   C751.896240,25.336224 743.598877,13.634705 728.817261,5.563668   C727.133301,4.644211 724.910767,4.262244 724.790894,1.396600   C812.687561,1.000000 900.375122,1.000000 988.531372,1.000000   C990.007568,4.489159 986.843811,4.630159 985.070862,5.567560   C975.091858,10.843436 967.739990,18.377859 964.070129,29.215023   C962.772705,33.046432 962.452942,37.001869 962.457642,41.031181   C962.490417,69.002213 962.486084,96.973320 962.458252,124.944374   C962.455811,127.414169 962.832397,129.961868 961.267822,132.640884   C955.977905,133.000000 950.955811,133.000000 945.466858,133.000000   C943.183411,130.881714 943.579407,128.298386 943.575134,125.838562   C943.541992,106.701515 943.601013,87.564270 943.544983,68.427315   C943.489502,49.465584 928.622620,32.927811 909.672546,30.631220   C890.673035,28.328644 871.858643,41.241074 867.335327,59.644730   C866.571838,62.751041 866.435608,65.887161 866.437195,69.056381   C866.446716,87.860664 866.455444,106.664963 866.426331,125.469208   C866.422729,127.773613 866.759033,130.151413 865.259827,132.651978  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1825.267822,132.640884   C1819.977905,133.000000 1814.955811,133.000000 1809.466797,133.000000   C1807.183594,130.881622 1807.579468,128.298264 1807.575195,125.838432   C1807.542114,106.867607 1807.111938,87.882881 1807.698242,68.930183   C1808.171021,53.646545 1797.431641,37.678955 1780.017700,32.100964   C1764.359375,27.085323 1747.017456,33.237671 1737.353394,47.102734   C1732.748657,53.709270 1730.313232,60.883373 1730.387939,69.056023   C1730.559937,87.858902 1730.455933,106.664474 1730.426514,125.468903   C1730.422852,127.773407 1730.759277,130.151398 1729.259766,132.652008   C1723.977905,133.000000 1718.955811,133.000000 1713.466797,133.000000   C1711.183472,130.881668 1711.579346,128.298386 1711.575073,125.838531   C1711.541382,106.701462 1711.600098,87.564209 1711.544800,68.427231   C1711.490112,49.467190 1696.622437,32.927696 1677.672485,30.631218   C1658.672852,28.328712 1639.858887,41.241005 1635.335205,59.644859   C1634.571655,62.751213 1634.435791,65.887283 1634.437378,69.056511   C1634.447021,87.860809 1634.455933,106.665123 1634.426147,125.469383   C1634.422607,127.773743 1634.759155,130.151535 1633.259766,132.651978   C1627.977905,133.000000 1622.955811,133.000000 1617.466797,133.000000   C1615.081909,130.721130 1615.546387,127.960556 1615.543335,125.339363   C1615.510620,97.862274 1615.221558,70.380585 1615.632812,42.909630   C1615.895996,25.335945 1607.599121,13.634593 1592.817261,5.563704   C1591.133301,4.644259 1588.910767,4.262205 1588.790894,1.396615   C1676.687622,1.000000 1764.375122,1.000000 1852.531372,1.000000   C1854.008057,4.489510 1850.843750,4.630230 1849.070923,5.567548   C1839.091675,10.843255 1831.740112,18.377737 1828.070068,29.214935   C1826.772705,33.046482 1826.453491,37.001896 1826.458130,41.031147   C1826.490723,69.002190 1826.486694,96.973312 1826.458740,124.944382   C1826.456299,127.414215 1826.832520,129.961899 1825.267822,132.640884  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1537.267822,132.640884   C1531.977905,133.000000 1526.955811,133.000000 1521.466797,133.000000   C1519.183350,130.881332 1519.579346,128.297699 1519.575073,125.837547   C1519.541870,106.864441 1519.127563,87.878319 1519.696411,68.922287   C1520.136353,54.263695 1510.224854,38.680531 1493.427856,32.562897   C1478.765503,27.222776 1461.718384,31.974442 1451.446899,44.331032   C1445.500854,51.483967 1442.259033,59.527981 1442.374878,69.048927   C1442.603882,87.852837 1442.455933,106.661560 1442.426514,125.468246   C1442.422974,127.772980 1442.758911,130.151077 1441.259766,132.651978   C1435.977905,133.000000 1430.955811,133.000000 1425.466797,133.000000   C1423.183472,130.882019 1423.579346,128.299011 1423.575073,125.839470   C1423.541748,106.871078 1423.238647,87.895752 1423.643799,68.936012   C1424.081421,48.461277 1407.293579,32.740360 1389.183472,30.640667   C1369.820190,28.395697 1351.468506,41.699245 1347.115845,60.627808   C1346.474731,63.415096 1346.441406,66.233643 1346.441650,69.064156   C1346.442505,87.866211 1346.455811,106.668282 1346.426270,125.470299   C1346.422729,127.774445 1346.758789,130.151962 1345.259766,132.652100   C1339.977905,133.000000 1334.955811,133.000000 1329.466797,133.000000   C1327.081299,130.720566 1327.546265,127.959328 1327.543213,125.337540   C1327.510620,97.354279 1327.309814,69.368706 1327.605225,41.388535   C1327.778564,24.960516 1319.399048,14.248109 1306.163696,6.229518   C1304.129761,4.997306 1301.195801,4.832956 1300.791016,1.396748   C1388.687622,1.000000 1476.375122,1.000000 1564.531372,1.000000   C1566.008057,4.489510 1562.843750,4.630284 1561.070923,5.567548   C1551.091675,10.843309 1543.740112,18.377737 1540.070068,29.214935   C1538.772705,33.046482 1538.453491,37.001896 1538.458130,41.031147   C1538.490723,69.002190 1538.486694,96.973312 1538.458740,124.944382   C1538.456299,127.414215 1538.832520,129.961899 1537.267822,132.640884  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M148.531357,1.000000   C148.220230,2.569749 149.263855,2.621967 150.419540,3.042744   C162.624496,7.486465 170.543976,16.388960 175.422424,28.064075   C176.694122,31.107512 177.053131,34.620934 177.044632,38.104229   C176.968231,69.423561 177.000000,100.743164 177.000000,132.531342   C150.645767,133.000000 124.291542,133.000000 97.468658,133.000000   C95.418877,131.207825 95.535500,128.996506 95.534081,126.841026   C95.514671,97.373932 95.036278,67.896179 95.704987,38.443645   C96.119759,20.176100 106.936867,8.507550 123.644958,1.278607   C132.020905,1.000000 140.041809,1.000000 148.531357,1.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1300.531372,1.000000   C1300.207031,3.052844 1301.795044,2.595625 1302.910522,3.072901   C1316.240601,8.776654 1324.911377,18.651300 1328.799194,32.630646   C1329.188110,34.028854 1328.992920,35.601929 1328.993408,37.093880   C1329.002075,68.750145 1329.000000,100.406418 1329.000000,132.531342   C1302.645752,133.000000 1276.291504,133.000000 1249.468628,133.000000   C1249.000000,102.104340 1249.364136,71.202644 1248.852173,40.315472   C1248.580811,23.938919 1261.514282,7.627556 1275.719604,3.040391   C1276.610840,2.752599 1277.100098,2.286099 1277.293213,1.319329   C1284.687622,1.000000 1292.375122,1.000000 1300.531372,1.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M724.531372,1.000000   C724.220215,2.569854 725.263916,2.621958 726.419678,3.042775   C738.624451,7.486630 746.544189,16.389011 751.422485,28.064201   C752.694092,31.107557 753.053162,34.621029 753.044678,38.104355   C752.968201,69.423645 753.000000,100.743202 753.000000,132.531342   C726.645752,133.000000 700.291565,133.000000 673.468628,133.000000   C673.000000,102.104332 673.364136,71.202637 672.852173,40.315453   C672.580811,23.938732 685.514160,7.627629 699.719604,3.040395   C700.610779,2.752622 701.100159,2.286122 701.293213,1.319299   C708.687561,1.000000 716.375183,1.000000 724.531372,1.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M961.468628,133.000000   C961.000000,102.104332 961.364136,71.202637 960.852173,40.315453   C960.580811,23.938698 973.514160,7.627599 987.719604,3.040366   C988.610779,2.752579 989.100159,2.286122 989.293213,1.319299   C996.687561,1.000000 1004.375183,1.000000 1012.531372,1.000000   C1012.220215,2.569855 1013.263916,2.621964 1014.419678,3.042781   C1026.624390,7.486678 1034.544312,16.388767 1039.422485,28.064051   C1040.694092,31.107458 1041.053101,34.620914 1041.044556,38.104240   C1040.968140,69.423569 1041.000000,100.743164 1041.000000,132.531342   C1014.645752,133.000000 988.291565,133.000000 961.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1537.468628,133.000000   C1537.000000,102.104340 1537.364136,71.202644 1536.852173,40.315472   C1536.580811,23.938915 1549.514282,7.627555 1563.719604,3.040391   C1564.610840,2.752599 1565.100098,2.286099 1565.293213,1.319329   C1572.687622,1.000000 1580.375122,1.000000 1588.531372,1.000000   C1588.220215,2.569796 1589.264038,2.621974 1590.419556,3.042771   C1602.624512,7.486618 1610.544189,16.388796 1615.422241,28.064117   C1616.693970,31.107498 1617.053101,34.620903 1617.044556,38.104229   C1616.968140,69.423561 1617.000000,100.743164 1617.000000,132.531342   C1590.645752,133.000000 1564.291504,133.000000 1537.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M385.468658,133.000000   C385.000000,102.104301 385.364136,71.202568 384.852203,40.315353   C384.580811,23.939171 397.513916,7.627459 411.719757,3.040357   C412.610931,2.752600 413.100159,2.285952 413.293274,1.319292   C420.687592,1.000000 428.375153,1.000000 436.531372,1.000000   C436.220276,2.569757 437.251190,2.640097 438.421692,3.039450   C452.938171,7.992139 465.616913,24.337646 465.201752,41.605785   C464.477264,71.742287 465.000000,101.908768 465.000000,132.531342   C438.645782,133.000000 412.291534,133.000000 385.468658,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1825.468628,133.000000   C1825.000000,102.104340 1825.364136,71.202644 1824.852173,40.315472   C1824.580811,23.938908 1837.514282,7.627526 1851.719604,3.040362   C1852.610840,2.752599 1853.100098,2.286099 1853.293213,1.319329   C1860.687622,1.000000 1868.375122,1.000000 1876.531372,1.000000   C1888.612427,4.869433 1897.156860,12.321382 1902.681030,23.200375   C1905.200562,28.162548 1906.486694,33.459644 1906.484985,39.071892   C1906.475830,68.193405 1906.486572,97.314934 1906.467407,126.436455   C1906.466187,128.420425 1906.621704,130.450668 1905.271240,132.636719   C1878.645752,133.000000 1852.291504,133.000000 1825.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M81.257294,132.656586   C55.405506,133.000000 29.810690,132.941528 4.216975,133.082870   C1.397746,133.098450 0.908990,132.450516 0.923890,129.734375   C1.055166,105.802605 1.000000,81.869804 1.000000,57.468658   C4.855708,46.926449 10.807013,38.463970 20.383055,33.129829   C34.136467,25.468773 48.053898,25.397999 61.702450,33.389629   C74.517258,40.893074 82.110771,51.947723 82.333115,67.070160   C82.624184,86.867294 82.413719,106.671677 82.393906,126.472923   C82.391922,128.452347 82.607246,130.487732 81.257294,132.656586  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1441.468628,133.000000   C1441.000000,111.355141 1441.425781,89.699188 1440.861816,68.069031   C1440.430176,51.519104 1454.977539,33.769344 1471.794189,29.927063   C1493.019165,25.077574 1514.991455,38.343662 1520.818848,60.663929   C1521.186523,62.072422 1520.993408,63.637695 1520.994019,65.130058   C1521.002563,87.440933 1521.000000,109.751808 1521.000000,132.531342   C1494.645752,133.000000 1468.291504,133.000000 1441.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1729.468628,133.000000   C1729.000000,111.356117 1729.328979,89.705620 1728.894043,68.070480   C1728.556885,51.290913 1742.958008,33.777481 1759.800537,29.927437   C1781.027832,25.075111 1802.997681,38.354893 1808.819824,60.667011   C1809.187378,62.075451 1808.993408,63.640747 1808.994019,65.133087   C1809.002563,87.442955 1809.000000,109.752815 1809.000000,132.531342   C1782.645752,133.000000 1756.291504,133.000000 1729.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1633.468628,133.000000   C1633.000000,111.521759 1633.479736,90.029381 1632.847412,68.569771   C1632.346191,51.555695 1646.564819,34.072224 1663.309814,30.007759   C1685.326782,24.663649 1708.315552,39.028580 1712.949219,62.140251   C1713.206177,63.421898 1712.999268,64.797585 1712.999268,66.129509   C1713.000244,88.107231 1713.000000,110.084961 1713.000000,132.531342   C1686.645752,133.000000 1660.291504,133.000000 1633.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M865.468628,133.000000   C865.000000,111.521759 865.479797,90.029373 864.847534,68.569763   C864.346191,51.555614 878.564941,34.072212 895.309814,30.007776   C917.326904,24.663633 940.315613,39.028851 944.949280,62.140301   C945.206177,63.421940 944.999268,64.797646 944.999329,66.129570   C945.000366,88.107277 945.000000,110.084976 945.000000,132.531342   C918.645752,133.000000 892.291565,133.000000 865.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M481.468658,133.000000   C481.000000,111.356125 481.329041,89.705643 480.894073,68.070511   C480.556732,51.291225 494.957825,33.777473 511.800598,29.927425   C533.028625,25.074965 554.998230,38.355946 560.819702,60.667149   C561.187195,62.075638 560.993469,63.640888 560.994019,65.133232   C561.002625,87.443047 561.000000,109.752869 561.000000,132.531342   C534.645752,133.000000 508.291534,133.000000 481.468658,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M193.468658,133.000000   C193.000000,111.356117 193.329010,89.705620 192.894073,68.070480   C192.556747,51.291256 206.957764,33.777454 223.800659,29.927422   C245.028442,25.075062 266.997986,38.355522 272.819763,60.667107   C273.187286,62.075581 272.993469,63.640842 272.994049,65.133186   C273.002655,87.443016 273.000000,109.752853 273.000000,132.531342   C246.645767,133.000000 220.291550,133.000000 193.468658,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M577.468628,133.000000   C577.000000,111.522736 577.386169,90.036324 576.878113,68.571083   C576.469482,51.306129 590.596558,34.062256 607.315857,30.006731   C629.338501,24.664814 652.323181,39.042709 656.949280,62.143471   C657.205933,63.425156 656.999146,64.800697 656.999207,66.132561   C657.000305,88.109268 657.000000,110.085976 657.000000,132.531342   C630.645752,133.000000 604.291565,133.000000 577.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M769.468628,133.000000   C769.000000,111.522736 769.386169,90.036324 768.878113,68.571083   C768.469421,51.306129 782.596558,34.062263 799.315857,30.006744   C821.338562,24.664812 844.323242,39.042728 848.949280,62.143467   C849.205933,63.425152 848.999146,64.800697 848.999207,66.132561   C849.000305,88.109268 849.000000,110.085976 849.000000,132.531342   C822.645752,133.000000 796.291565,133.000000 769.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M289.468658,133.000000   C289.000000,111.522736 289.386230,90.036339 288.878143,68.571098   C288.469482,51.306107 302.596619,34.062229 319.315826,30.006754   C341.338715,24.664806 364.323212,39.042709 368.949341,62.143459   C369.206024,63.425140 368.999146,64.800697 368.999207,66.132561   C369.000305,88.109268 369.000000,110.085976 369.000000,132.531342   C342.645782,133.000000 316.291534,133.000000 289.468658,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1057.468628,133.000000   C1057.000000,111.522728 1057.386475,90.036308 1056.878418,68.571060   C1056.469604,51.306046 1070.596680,34.062229 1087.315796,30.006754   C1109.338379,24.664869 1132.322876,39.042248 1136.949463,62.143375   C1137.206177,63.425026 1136.999268,64.800636 1136.999268,66.132500   C1137.000366,88.109230 1137.000000,110.085953 1137.000000,132.531342   C1110.645752,133.000000 1084.291504,133.000000 1057.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1153.468628,133.000000   C1153.000000,111.522728 1153.386353,90.036308 1152.878296,68.571068   C1152.469604,51.306065 1166.596680,34.062214 1183.315796,30.006725   C1205.338379,24.664841 1228.322876,39.042244 1232.949585,62.143364   C1233.206299,63.425037 1232.999268,64.800636 1232.999268,66.132500   C1233.000366,88.109230 1233.000000,110.085953 1233.000000,132.531342   C1206.645752,133.000000 1180.291504,133.000000 1153.468628,133.000000  z"
+        />
+        <path
+          fill="#ffffff12"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1345.468628,133.000000   C1345.000000,111.522728 1345.386353,90.036308 1344.878296,68.571068   C1344.469604,51.306046 1358.596680,34.062214 1375.315796,30.006723   C1397.338379,24.664869 1420.322754,39.042263 1424.949463,62.143387   C1425.206177,63.425064 1424.999146,64.800636 1424.999268,66.132500   C1425.000366,88.109230 1425.000000,110.085953 1425.000000,132.531342   C1398.645752,133.000000 1372.291504,133.000000 1345.468628,133.000000  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M81.466858,133.000000   C81.000000,111.344696 80.834404,89.687744 81.050049,68.034584   C81.237617,49.200096 67.491745,34.539474 50.550900,30.110767   C30.775349,24.941000 10.816423,35.966946 3.691773,54.562523   C3.387916,55.355602 3.438947,57.031067 1.385598,56.997208   C1.000000,39.709129 1.171365,22.415272 0.869794,5.129662   C0.801304,1.203905 2.063108,0.917616 5.351996,0.927089   C44.588638,1.040099 83.825714,1.000000 123.531342,1.000000   C124.373421,3.430620 122.144966,3.343250 120.905128,3.961286   C108.406471,10.191621 100.350929,19.942947 97.203430,33.603336   C96.874329,35.031670 97.007515,36.577572 97.007072,38.068954   C96.997711,69.400192 97.000000,100.731438 97.000000,132.531342   C91.977905,133.000000 86.955818,133.000000 81.466858,133.000000  z"
+        />
+        <path
+          fill="#0000"
+          opacity="1.000000"
+          stroke="none"
+          d=" M1905.471191,133.000000   C1905.000000,102.104340 1904.635864,71.202644 1905.147827,40.315472   C1905.419189,23.938955 1892.485840,7.627585 1878.280396,3.040361   C1877.389160,2.752598 1876.899902,2.286099 1876.706787,1.319329   C1890.801392,1.000000 1904.603027,1.040561 1918.403931,0.953400   C1920.328613,0.941243 1921.074951,1.063631 1921.069702,3.392738   C1920.974121,45.794342 1920.974731,88.196274 1921.068604,130.597885   C1921.073730,132.906448 1920.363403,133.124268 1918.411621,133.048935   C1914.260742,132.888702 1910.099365,133.000000 1905.471191,133.000000  z"
+        />
+      </svg>
+    </footer>
     <!-- FOOTER SECTION END -->
 
     <!-- APP JS SCRIPT -->

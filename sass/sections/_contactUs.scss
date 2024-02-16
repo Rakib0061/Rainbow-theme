@@ -1,0 +1,292 @@
+@use "../custom" as *;
+@use "../../sass/components/mixins" as *;
+
+.contactUs {
+  // mediaquary
+  @include media-breakpoint-down(md) {
+    padding: 3.5rem 0;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding: 4.5rem 0;
+  }
+
+  @include sliderSectionBG;
+  padding: 7.5rem 0;
+
+  .contactUSLeft {
+    span {
+      // mediaquary
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      @include media-breakpoint-down(xl) {
+        font-size: 2.4375rem;
+      }
+
+      font-size: 3.4375rem;
+    }
+    .display-5 {
+      // mediaquary
+      @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+      }
+
+      @include media-breakpoint-down(xl) {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+      }
+
+    }
+    p {
+      // mediaquary
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+        line-height: 1.375rem;
+      }
+      @include media-breakpoint-down(xl) {
+        font-size: 1.0625rem;
+
+      }
+
+      font-size: 1.125rem;
+      font-weight: $font-weight-normal;
+      font-family: $font-family-base;
+      line-height: 1.875rem;
+      margin-bottom: 2.5rem;
+    }
+    button {
+      background: $primary;
+      color: $white;
+      font-size: 0.875rem;
+      &::before {
+        @include media-breakpoint-down(md) {
+        }
+        @include btnClr;
+      }
+    }
+  }
+
+  .contactUs_right {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    grid-template-areas:
+      "a b c d"
+      "e f g h"
+      ". i j k";
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k .";
+    }
+
+    figure {
+      @include media-breakpoint-down(sm) {
+        width: 3.485rem;
+        height: 3.485rem;
+      }
+      justify-self: center;
+      width: 7.485rem;
+      height: 7.485rem;
+
+      &:nth-child(1) {
+        // circle
+        grid-area: a;
+        background: $danger;
+        clip-path: circle(50% at 50% 50%);
+        position: relative;
+        &::before {
+          @include media-breakpoint-down(sm) {
+            width: 3.359573rem;
+            height: 3.359573rem;
+          }
+          width: 7.359573rem;
+          height: 7.359573rem;
+          @include sliderSectionBG;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+          content: "";
+          clip-path: circle(50% at 50% 50%);
+        }
+      }
+      &:nth-child(2) {
+        // circle
+        grid-area: b;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum2.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(3) {
+        // star
+        grid-area: c;
+        background: $danger;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        position: relative;
+        &::before {
+          @include media-breakpoint-down(sm) {
+            width: 3.359573rem;
+            height: 3.359573rem;
+          }
+          width: 7.359573rem;
+          height: 7.359573rem;
+          @include sliderSectionBG;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+          content: "";
+          clip-path: polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%
+          );
+        }
+      }
+      &:nth-child(4) {
+        // circle
+        grid-area: d;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum4.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(5) {
+        // circle
+        grid-area: e;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum5.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(6) {
+        // tringle
+        grid-area: f;
+        background: $danger;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        position: relative;
+        &::before {
+          @include media-breakpoint-down(sm) {
+            width: 3.359573rem;
+            height: 3.359573rem;
+          }
+          width: 7.359573rem;
+          height: 7.359573rem;
+          @include sliderSectionBG;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+          content: "";
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+      }
+      &:nth-child(7) {
+        // circle
+        grid-area: g;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum7.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(8) {
+        // circle
+        grid-area: h;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum8.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(9) {
+        // circle
+        grid-area: i;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum9.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(10) {
+        // circle
+        grid-area: j;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../public/img/contactUs/ellipseNum10.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(11) {
+        // hexagoan
+        grid-area: k;
+        background: $danger;
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
+        );
+        position: relative;
+        &::before {
+          @include media-breakpoint-down(sm) {
+            width: 3.359573rem;
+            height: 3.359573rem;
+          }
+          width: 7.359573rem;
+          height: 7.359573rem;
+          @include sliderSectionBG;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+          content: "";
+          clip-path: polygon(
+            25% 0%,
+            75% 0%,
+            100% 50%,
+            75% 100%,
+            25% 100%,
+            0% 50%
+          );
+        }
+      }
+    }
+  }
+}
