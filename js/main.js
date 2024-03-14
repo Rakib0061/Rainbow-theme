@@ -4,19 +4,6 @@ import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 // IMPORT THE BOOTSTRAP BUNDLE
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 
-// Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
-  new bootstrap.Popover(popover);
-});
-
-// TOOLTIP FROM BOOTSTRAPE
-const tooltipTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="tooltip"]'
-);
-const tooltipList = [...tooltipTriggerList].map(
-  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-);
-
 //  ✅@@@@@@@@@@@@@@@@@@@@@ All Swiper slider JS here @@@@@@@@@@@@@@@@@@@@@
 
 var swiper = new Swiper(".mySwiper", {
