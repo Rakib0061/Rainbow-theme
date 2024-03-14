@@ -87,7 +87,8 @@ navbar_toggler.addEventListener("click", () => {
 // FIXED NAVBAR ON SCROLL BEGIN
 window.addEventListener("scroll", () => {
   let Y = window.scrollY;
-  navManue.classList.toggle("shadow", Y > 0, "fixed-top", Y > 0);
+  navManue.classList.toggle("shadow", Y > 0);
+  navManue.classList.toggle("fixed-top", Y > 0);
 });
 // FIXED NAVBAR ON SCROLL END
 
@@ -147,3 +148,14 @@ cardBtnEye.forEach((vlu) =>
   });
 })();
 // BOOTSTRAP FORM VALIDATION END
+
+
+// back on top button start
+
+const bacOnTop = document.getElementById("bacOnTop");
+bacOnTop.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+});
+
+// back on top button end
+

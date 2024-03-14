@@ -10,8 +10,6 @@ $green: #72bf40;
 $orange:  #F38844;
 
 
-
-
 // MY THEME COLOR
 $primary: $blue;
 $secondary: $gray;
@@ -24,3 +22,7 @@ $orange-dark: #FF4551;
 // MY FONT FAMILY
 $font-family-base: "IBM Plex Sans", sans-serif;
 $font-family-code: "Manrope", sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
